@@ -6,3 +6,4 @@ function showNav(){
 function showOver(){
     document.querySelector('.overlay').classList.toggle('active')
 }
+

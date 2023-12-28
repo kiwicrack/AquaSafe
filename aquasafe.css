@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+form input{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;
+}
+
+.form-container {
+    flex: 1;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px; 
+    max-width: 35%; 
+}
+
+.form-container hr {  /* Bold: Updated selector to target hr inside .form-container */
+    border: 2px solid #000;
+    margin-top: 0px;
+    margin-bottom: -6px;
+    color: black;
+    background-color: black;
+}
+
+.form-nav {
+    
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.form-nav h2 {
+    color: #333;
+    display: flex;  
+    text-align: left;
+    align-items: center;  
+}
+
+.form-nav hr {  /* Bold: Updated selector to target hr inside .form-nav */
+    border: 2px solid #000;
+    color: black;
+    background-color: black;
+}
+
+.form-nav h2 span {
+    margin-right: 8px;  
+}
+
+.closebutton {
+    text-decoration: none;
+    color: #000;
+    padding-right: 10px;
+}
+
+.forgetpassword-form-nav a{
+    text-decoration: none;
+    color: #000;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+
+/*login page*/
+.login-container {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-style: solid;
+    max-width: 700px;
+    width: 100%;
+}
+
+.login-form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-top:10px;
+    margin-bottom: 15px;
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 10px 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    margin-right: 136px;  
+    color: #000;
+}
+
+.form-group img {
+    width: 20px; /* Adjust the width of the icon as needed */
+    height: 20px; /* Adjust the height of the icon as needed */
+    margin-right: 10px; /* Add some space between the icon and the input field */
+}
+
+.form-group input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    
+}
+.selection-group label {
+    margin-right: 12px;
+}
+.form-group select {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-family: 'JetBrains Mono', monospace; 
+    font-size: 15px;
+}
+
+.login-button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: none;
+    margin-left: 58px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.form-group i {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.image-container {
+    flex: 1;
+    width: 600px;
+    background: url('Images/AquaSafe.jpg') center/cover no-repeat;    
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.signup-link a {
+    color: blue;
+    text-decoration: none;  /* Bold: Fixed typo in text-ud to text-decoration */
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+    line-height: 0.5
+}
+
+.form-group a{
+   text-decoration: none;
+}
+
+.signup-link p {
+    margin-bottom: 8px;
+}
+
+/*register page*/
+
+.conditions{
+    font-size: 12px;
+}
+.register-container {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-style: solid;
+    width: fit-content;
+    height: fit-content;
+    contain: content;
+}
+
+.register-form {
+    margin-top: 20px;
+}
+
+.register-button {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 46px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: none;
+    margin-left: 113px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+
+}
+
+.login-link a {
+    color: blue;
+    text-decoration: none;  /* Bold: Fixed typo in text-ud to text-decoration */
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+}
+
+.login-link p {
+    margin-bottom: 8px;
+}
+
+.form-group-checkbox {
+    font-size: smaller;
+    display: flex;
+}
+
+/*forgetpassword page*/
+.forgetpassword-container {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-style: solid;
+    max-width: 700px;
+    width: 100%;
+}
+
+.forgetpassword-form-container {
+    flex: 1;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px; 
+    max-width: 100%; 
+    
+}
+
+.forgetpassword-form-container h2 {
+    margin-right: 169px;
+}
+
+.forgetpassword-form-container hr {  /* Bold: Updated selector to target hr inside .form-container */
+    border: 2px solid #000;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    color: black;
+    background-color: black;
+    margin-left: 117px;
+    margin-right: 117px;
+
+}
+
+.forgetpassword-form-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forgetpassword-form-container h3 {
+
+    text-align: center;
+}
+
+.forgetpassword-form-nav hr {  /* Bold: Updated selector to target hr inside .form-nav */
+    border: 2px solid #000;
+    color: black;
+    background-color: black;
+    margin-top: 0px; 
+    margin-bottom: -6px; 
+    margin-left: 117px;
+    margin-right: 117px;
+}
+
+.forgetpassword-form-nav span {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.forgetpassword-form {
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.forgetpassword-form-group {
+margin-bottom: 12px;
+    border: 2px black solid;
+    border-radius: 12px;
+    padding: 10px 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.forgetpassword-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    margin-right: 136px;  
+    color: #000;
+}
+
+.forgetpassword-form-group select {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.forgetpassword-form-group input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    
+}
+
+.forgetpassword-form-group img {
+    width: 20px; /* Adjust the width of the icon as needed */
+    height: 20px; /* Adjust the height of the icon as needed */
+    margin-right: 10px; /* Add some space between the icon and the input field */
+}
+
+.forgetpassword-button {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 50px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: none;
+    margin-left: 193px;
+    margin-bottom: 20px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.form-group i {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+/*resetpassword page*/
+.resetpassword-container {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-style: solid;
+    max-width: 700px;
+    width: 100%;
+}
+
+.resetpassword-form-container {
+    flex: 1;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px; 
+    max-width: 100%; 
+}
+
+.resetpassword-form-container h2 {
+    margin-right: 169px;
+}
+
+.resetpassword-form-container hr {  /* Bold: Updated selector to target hr inside .form-container */
+    border: 2px solid #000;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    color: black;
+    background-color: black;
+    margin-left: 117px;
+    margin-right: 117px;
+
+}
+
+.resetpassword-form-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.resetpassword-form-container h3 {
+
+    text-align: center;
+}
+
+
+.resetpassword-form-nav hr {  /* Bold: Updated selector to target hr inside .form-nav */
+    border: 2px solid #000;
+    color: black;
+    background-color: black;
+    margin-top: 0px; 
+    margin-bottom: -6px; 
+    margin-left: 117px;
+    margin-right: 117px;
+}
+
+.resetpassword-form-nav a {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #000;
+    padding-right: 10px;
+}
+
+.resetpassword-form {
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.resetpassword-form-group {
+    margin-top:10px;
+    margin-bottom: 15px;
+    border: 2px black solid;
+    border-radius: 12px;
+    padding: 10px 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 120px;
+}
+
+.resetpassword-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    margin-right: 136px;  
+    color: #000;
+}
+
+.resetpassword-form-group input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    
+}
+
+.resetpassword-form-group img {
+    width: 20px; /* Adjust the width of the icon as needed */
+    height: 20px; /* Adjust the height of the icon as needed */
+    margin-right: 10px; /* Add some space between the icon and the input field */
+}
+
+.resetpassword-button {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 50px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: none;
+    margin-left: 193px;
+    margin-bottom: 20px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.error {
+	width: fit-content; 
+	margin: 0px auto; 
+    padding: 0 10px;
+	border: 1px solid #a94442; 
+	color: #a94442; 
+	background: #f2dede; 
+	border-radius: 5px; 
+    font-size: 12px;
+	text-align: left; 
+}
+
+.popUpForm {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1100;
+    background: #000000aa;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+
+}
+
+
+.popUpForm form {
+    background-color: #fff;
+    width: 90%;
+    max-width: 500px;
+}
+

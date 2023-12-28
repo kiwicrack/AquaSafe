@@ -6,21 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="navBar.css">
+    <link rel="stylesheet" href="mainTheme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/logo_nav.png" type="image/x-icon">
 
 <body>
+    <div class="moving_blocks">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="title_text block">AQUA SAFE.</div>
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>
+
     <header>
         <section>
             <!-- navbar -->
+            <div >
+                <div class="redirect_home">
+                    <a href="index.html"> AQUA SAFE.</a>
+                </div>
+
+                <div class="page_title">
+                    <h1> HOME PAGE. </h1>
+                </div>
+            </div>
+
+            <button class="hamburger" onclick="showNav(), showOver()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </button>
             <div class="navigation">
                 <div class="nav_line_main">
-                    <button class="hamburger" onclick="showNav(), showOver()">
-                        <div id="bar1" class="bar"></div>
-                        <div id="bar2" class="bar"></div>
-                        <div id="bar3" class="bar"></div>
-                    </button>
                 </div>
 
                 <div class="text nav_con1">
@@ -29,7 +52,7 @@
                     </div>
                 
                     <div>
-                        <br><a href="profile.html">Profile</a>
+                        <br><a href="profile.php">Profile</a>
                     </div>
                 </div>
                 
@@ -38,25 +61,94 @@
                         <ul>
                             <li><a href="index.html" class="active">Home</a></li>
                             <li><a href="donate.html">Donation</a></li>
-                            <li><a href="volunteer.html">Volunteer</a></li>
-                            <li><a href="floodAlert.html">Flood Alert</a></li>
+                            <li><a href="floodAlert.php">Flood Alert</a></li>
                             <br><br><br><br>
                         </ul>
                     </nav>
                 </div>
             </div>
         </section>
-        
-        <section>
-             <!-- wow design thingy -->
-        </section>
     </header>
 
-    <main class="overlay">
+    <main class="main_landing">
+        <section class="landing_pageC" style="height: fit-content;">
+            <div class="graphics_con">
+                <div class="aqua_text">
+                    Aqua
+                </div>
+                <div class="landing_img">
+                    <img src="Images/AquaSafe.jpg">
+                </div>
+                <div class="safe_text">
+                    Safe.
+                </div>
+                <div class="title_text" style="padding-bottom: 80px;">&mdash;&nbsp;&nbsp;"Alerts that Save, Relief that Rebuilds."&nbsp;&nbsp;&mdash;</div>
+            </div>
+        </section>
 
+        <section class="landing_pageC">
+            <div class="graphics_con" style="padding-left: 80px; text-align: left; align-items: flex-start;">
+                <div class="title_text">A FLOOD ALERT WEBSITE FOR MALAYSIANS.</div><br><br>
+                <div class="title_text" style="padding-bottom:80px;">UPDATED BASED OUR COMPANY'S METEOROLOGICAL FORECASTS.</div>
+            </div>
+        </section>
+
+        <section class="landing_pageC">
+            <div class="graphics_con">
+                <div class="title_text" style="padding-bottom: 30px;">ABOUT US.</div>
+                <div class="content_text" style="text-align: center;">
+                    <b style="color:#0132ab;">Aqua Safe is a Malaysian based meteorology company,</b> who is providing donation relief to flood victims as part of its corporate social responsibility efforts which aligns with the Sustainable Development Goals.<br><br>
+                    With a strong background in website development, Aqua Safe has decided to deploy a website that tackles <b style="color:#0132ab;">SDG11 which is on disaster risk reduction</b> by helping flash flood victims to safeguard themselves against this natural disaster while providing them with relief through donations to purchase materials that flood victims may require. <br><br>
+                    <b style="color:#0132ab;">Aqua Safe provides alerts to its website's users on where and when floods happen based on their meteorological data obtain from their satellite sensors.</b>
+                </div>
+            </div>
+        </section>
+
+        <section class="row_alignment landing_spacing">
+                <div class="title_text">
+                    Features:
+                </div>
+                <div class="row_content content_text">
+                    <span class="title_text" style="font-weight: 700;">01.</span>&nbsp;&nbsp;
+                    <span class="title_text">Google Maps & Location Pins.</span><br><br>For Direct Visualisation of Flooded Locations.<br><br><br><br>
+                    <span class="title_text" style="font-weight: 700;">02.</span>&nbsp;&nbsp;
+                    <span class="title_text">Colored Location Pins.</span><br><br>To indicate the Severity of Floods. <br>Clicking On Them Makes you Auto-Scroll to <br>The Specific Alert<br><br><br><br>
+                </div>
+                <div class="row_content content_text">
+                    <span class="title_text" style="font-weight: 700;">03.</span>&nbsp;&nbsp;
+                    <span class="title_text">Donation Page.</span><br><br>Do Your Part and Provide Relief to Those Who Need It The Most.<br><br><br>
+                    <span class="title_text" style="font-weight: 700;">04.</span>&nbsp;&nbsp;
+                    <span class="title_text">Popup for Detailed Alert Info.</span><br><br>More Detailed Information To Help Safeguard Users from Floods on our Alert Page<br><br><br><br>
+                </div>
+        </section>
     </main>
 
-
+    <footer class="footer_container content_text" style="line-height: 1.5;">
+        <div class="border"></div>
+        <div class="footer_main">
+            <div class="footer_content">&nbsp;'CONTACT</div>
+            <div class="footer_content" style="justify-content: right;">DETAILS.'&nbsp;</div>
+        </div>
+        <div style="padding-bottom: 20px;">
+            <div class="footer_row">
+                <div class="content_alignment">
+                    <div >01. AquaSafe Developer:</div><br>
+                    <div>Toh Kar Ming. </div>
+                    <div>21091137.</div>
+                </div>
+                <div class="content_alignment">
+                    <div >02. AquaSafe Developer:</div><br>
+                    <div>James Hwang Qi Leong.</div>
+                    <div>22004097.</div>
+                </div>
+                <div class="content_alignment" >
+                    <div >03. Copyright &copy; 2023. </div><br>
+                    <div>Group 1-3-1.<br>
+                    <div>WEB2202: Final Assessment.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="navScript.js"></script>
 </body>

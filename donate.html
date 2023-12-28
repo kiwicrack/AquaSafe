@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="navBar.css">
+    <link rel="stylesheet" href="mainTheme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/logo_nav.png" type="image/x-icon">
+<body>
+    <header>
+        <section>
+            <!-- navbar -->
+            <div>
+                <div class="redirect_home">
+                    <a href="index.html" > AQUA SAFE.</a>
+                </div>
+
+                <div class="page_title">
+                    <h1> DONATION. </h1>
+                </div>
+            </div>
+
+            <button class="hamburger" onclick="showNav(), showOver()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </button>
+            <div class="navigation">
+                <div class="nav_line_main">
+                </div> 
+ 
+                <div class="text nav_con1">
+                    <div class="nav_line">
+                        <img src="Images/logo_nav.png" style="height: 3cm; border:3px solid #000000;">
+                    </div>
+                
+                    <div>
+                        <br><a href="profile.php">Profile</a>
+                    </div>
+                </div>
+                
+                <div class="text nav_con2 nav_line_main">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="donate.html" class="active">Donation</a></li>
+                            <li><a href="floodAlert.php">Flood Alert</a></li>
+                            <br><br><br><br>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main class="donation_main">
+        <div class="donation_alignment">
+            <div class="donation_subalign">
+                <div><img src="Images/flood1.jpg"></div>
+                <div><img src="Images/flood2.jpeg"></div>
+                <div><img src="Images/flood3.png"></div>
+            </div>
+
+            <div class="content_text donation_subalign align_start">
+                <div class="title_text" style="border-bottom: 4px solid #000000;">Flood Relief Aid.</div><br>
+                <div>
+                    The rising floodwaters is worrying and many families are stranded, panicking, and are cold and hungry.<br><br>
+                    Let's do our part by offering a little help. <br><br>Fund our Flood Relief Aid to help the flash flood victims in Selangor and KL.<br><br>
+                    Money from the donations will be used to purchase:
+                </div><br>
+
+                <div class="content_text">
+                    <ul>
+                        <li>Food & Water.</li>
+                        <li>Clothing.</li>
+                        <li>Medical Supplies.</li>
+                        <li>Hygiene Kits. <br> (Soaps, Sanitary Pads etc.)</li>
+                    </ul>
+                </div><br>
+                <div>QR Code For Donation:</div><br>
+                <div class="qr"><img src="Images/qr.jpg"></div><br>
+                <div>Every Help Counts! Help Us to Share This!</div>
+            </div>
+        </div> 
+    </main>
+
+    <footer class="footer_container content_text" style="line-height: 1.5;">
+        <div class="border"></div>
+        <div class="footer_main">
+            <div class="footer_content">&nbsp;'CONTACT</div>
+            <div class="footer_content" style="justify-content: right;">DETAILS.'&nbsp;</div>
+        </div>
+        <div style="padding-bottom: 20px;">
+            <div class="footer_row">
+                <div class="content_alignment">
+                    <div >01. AquaSafe Developer:</div><br>
+                    <div>Toh Kar Ming.</div>
+                    <div>21091137.</div>
+                </div>
+                <div class="content_alignment">
+                    <div >02. AquaSafe Developer:</div><br>
+                    <div>James Hwang Qi Leong.</div>
+                    <div>22004097.</div>
+                </div>
+                <div class="content_alignment" >
+                    <div >03. Copyright &copy; 2023. </div><br>
+                    <div>Group 1-3-1.<br>
+                    <div>WEB2202: Final Assessment.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="navScript.js"></script>
+</body>
+
+</html>
